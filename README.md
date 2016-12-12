@@ -20,7 +20,7 @@ Add "sonar" database and "sonar" user with "sonar" password
 
 ## Java (JDK & JRE)
 
-    $ sudo apt-get install openjdk-8-jdk openjdk-8-jdk-headless openjdk-8-jre openjdk-8-jre-headless openjdk-8-source    openjdk-8-doc openjdk-8-dbg
+    $ sudo apt-get install openjdk-8-jdk openjdk-8-jdk-headless openjdk-8-jre openjdk-8-jre-headless openjdk-8-source openjdk-8-doc openjdk-8-dbg
     $ sudo apt-get install default-jdk default-jdk-headless default-jre default-jre-headless default-jdk-doc
 
 ## SonarQube
