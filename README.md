@@ -5,8 +5,12 @@ SonarQube Installation steps
     $ sudo apt-get upgrade
 
 # MySQL
+Install mysql & jdbc-driver
+
     $ sudo apt-get install mysql-client mysql-server libmysql-java
     $ mysql -u root -p
+
+Add "sonar" database and "sonar" user with "sonar" password
 
     CREATE DATABASE sonar CHARACTER SET utf8 COLLATE utf8_general_ci;
     CREATE USER 'sonar' IDENTIFIED BY 'sonar';
@@ -15,14 +19,16 @@ SonarQube Installation steps
     FLUSH PRIVILEGES;
 
 # Java (JDK & JRE)
-    sudo apt-get install openjdk-8-jdk openjdk-8-jdk-headless openjdk-8-jre openjdk-8-jre-headless openjdk-8-source    openjdk-8-doc openjdk-8-dbg
-    sudo apt-get install default-jdk default-jdk-headless default-jre default-jre-headless default-jdk-doc
+
+    $ sudo apt-get install openjdk-8-jdk openjdk-8-jdk-headless openjdk-8-jre openjdk-8-jre-headless openjdk-8-source    openjdk-8-doc openjdk-8-dbg
+    $sudo apt-get install default-jdk default-jdk-headless default-jre default-jre-headless default-jdk-doc
 
 # SonarQube
 
 ## Deploying official docker:
-    sudo apt-get install docker.io
-    sudo docker pull sonarqube
+
+    $ sudo apt-get install docker.io
+    $ sudo docker pull sonarqube
 
     $ docker run -d --name sonarqube \
         -p 9000:9000 -p 9092:9092 -p 3306:3306 \
@@ -32,7 +38,8 @@ SonarQube Installation steps
         sonarqube
 
 ## Installation from official repository:
-    /etc/apt/sources.list
+/etc/apt/sources.list
+
     #------------------------------------------------------------------
     deb http://downloads.sourceforge.net/project/sonar-pkg/deb binary/
     #------------------------------------------------------------------
@@ -51,8 +58,8 @@ SonarQube Installation steps
 
     sonar.web.javaOpts=-server
 
+/etc/init.d/sonar
 
-    /etc/init.d/sonar
     #-----------------------------------------------------------
     #!/bin/sh
     #
@@ -74,14 +81,14 @@ SonarQube Installation steps
     /usr/bin/sonar $*
     #-----------------------------------------------------------
 
-    sudo ln -s $SONAR_HOME/bin/linux-x86-64/sonar.sh /usr/bin/sonar
-    sudo chmod 755 /etc/init.d/sonar
-    sudo update-rc.d sonar defaults
+    $ sudo ln -s $SONAR_HOME/bin/linux-x86-64/sonar.sh /usr/bin/sonar
+    $ sudo chmod 755 /etc/init.d/sonar
+    $ sudo update-rc.d sonar defaults
 
 # AthenaPDF service
-    sudo docker pull arachnysdocker/athenapdf-service
-    sudo docker run -p 8080:8080 --rm --env-file=sonarqube-athena.env arachnysdocker/athenapdf-service &
+    $ sudo docker pull arachnysdocker/athenapdf-service
+    $ sudo docker run -p 8080:8080 --rm --env-file=sonarqube-athena.env arachnysdocker/athenapdf-service &
 
 # Example of usage:
     http://<docker-address>:8080/convert?auth=arachnys-weaver&url=http://blog.arachnys.com/
-    curl http://dockerhost:8080/convert\?auth\=arachnys-weaver\&url\=http://blog.arachnys.com/ |> out.pdf
+    $ curl http://dockerhost:8080/convert\?auth\=arachnys-weaver\&url\=http://blog.arachnys.com/ |> out.pdf
