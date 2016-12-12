@@ -1,13 +1,13 @@
 # sonarqube-installation
 SonarQube Installation steps
 
-sudo apt-get update
-sudo apt-get upgrade
+    `sudo apt-get update`
+    `sudo apt-get upgrade`
 
 # MySQL
-sudo apt-get install mysql-client mysql-server libmysql-java
+    `sudo apt-get install mysql-client mysql-server libmysql-java`
 
-mysql -u root -p
+    `mysql -u root -p`
 
 CREATE DATABASE sonar CHARACTER SET utf8 COLLATE utf8_general_ci;
 CREATE USER 'sonar' IDENTIFIED BY 'sonar';
@@ -16,14 +16,14 @@ GRANT ALL ON sonar.* TO 'sonar'@'localhost' IDENTIFIED BY 'sonar';
 FLUSH PRIVILEGES;
 
 # Java (JDK & JRE)
-sudo apt-get install openjdk-8-jdk openjdk-8-jdk-headless openjdk-8-jre openjdk-8-jre-headless openjdk-8-source openjdk-8-doc openjdk-8-dbg
-sudo apt-get install default-jdk default-jdk-headless default-jre default-jre-headless default-jdk-doc 
+    `sudo apt-get install openjdk-8-jdk openjdk-8-jdk-headless openjdk-8-jre openjdk-8-jre-headless openjdk-8-source    openjdk-8-doc openjdk-8-dbg`
+    `sudo apt-get install default-jdk default-jdk-headless default-jre default-jre-headless default-jdk-doc`
 
 # SonarQube
 
 ## Deploying official docker:
-sudo apt-get install docker.io
-sudo docker pull sonarqube
+    `sudo apt-get install docker.io`
+    `sudo docker pull sonarqube`
 
 $ docker run -d --name sonarqube \
     -p 9000:9000 -p 9092:9092 -p 3306:3306 \
