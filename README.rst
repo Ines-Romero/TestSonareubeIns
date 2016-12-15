@@ -92,7 +92,7 @@ AthenaPDF
     # docker run -p 8080:8080 -d --env-file=athenapdf.env arachnysdocker/athenapdf-service
 
 athenapdf
-~~~~~~~~~
+---------
 ::
 
     Usage: athenapdf [options] <URI> [output]
@@ -116,7 +116,7 @@ athenapdf
     --no-cache                   disables caching
 
 Example of usage:
-`````````````````
+-----------------
 ::
 
     http://<docker-address>:8080/convert?auth=arachnys-weaver&url=http://blog.arachnys.com/
