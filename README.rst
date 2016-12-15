@@ -23,7 +23,7 @@ Add "sonar" database and "sonar" user with "sonar" password:
     postgres=# \l
     postgres=# \q
 
-Java (JRE or JVM)
+Java (JRE & JVM)
 ----------------
 ::
 
