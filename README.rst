@@ -17,8 +17,9 @@ Add "sonar" database and "sonar" user with "sonar" password::
     postgres=# CREATE USER sonar WITH PASSWORD 'sonar';
     postgres=# \du
     postgres=# CREATE DATABASE sonar WITH OWNER sonar encoding 'UTF8';
+    postgres=# GRANT ALL PRIVILEGES ON DATABASE sonar TO sonar;
     postgres=# \l
-    postgres=# \q
+    postgres=# \q
 
 Java (JRE & JVM)
 ----------------
