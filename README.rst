@@ -92,7 +92,7 @@ AthenaPDF
     # docker run -p 8080:8080 -d --env-file=athenapdf.env arachnysdocker/athenapdf-service
 
 athenapdf
----------
+~~~~~~~~~
 ::
 
     Usage: athenapdf [options] <URI> [output]
