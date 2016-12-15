@@ -30,9 +30,9 @@ SonarQube Server
 ----------------
 ::
 
-    wget https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-6.2.zip
+    $ wget https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-6.2.zip
     # apt-get install unzip
-    # unzip sonarqube-6.2.zip
+    $ unzip sonarqube-6.2.zip
     # mv sonarqube-6.2/ /opt/sonar/
 
 
