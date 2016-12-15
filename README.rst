@@ -8,9 +8,12 @@ SonarQube installation  & configuration steps:
 
 PostgreSQL
 ----------
+Install PostgreSQL & jdbc-driver
 ::
 
     # apt-get install postgresql libpostgresql-jdbc-java
+
+Add "sonar" database and "sonar" user with "sonar" password:
 ::
 
     $ sudo -u postgres psql
