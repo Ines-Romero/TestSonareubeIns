@@ -66,8 +66,8 @@ Register SonarQube at boot time (Ubuntu, 64 bit)::
 Setting the access to the Database::
 
     # vi /opt/sonar/conf/sonar.properties
-    sonar.jdbc.username=sonarqube
-    sonar.jdbc.password=mypassword
+    sonar.jdbc.username=sonar
+    sonar.jdbc.password=sonar
     sonar.jdbc.url=jdbc:postgresql://localhost/sonarqube
 Starting the Web Server::
 
