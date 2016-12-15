@@ -88,7 +88,7 @@ AthenaPDF
 
     # apt-get install docker.io
     # docker pull arachnysdocker/athenapdf-service
-    # docker run -p 8080:8080 -d --env-file=athenapdf.env arachnysdocker/athenapdf-service
+    # docker run --restart=always -p 8080:8080 -d --env-file=athenapdf.env arachnysdocker/athenapdf-service
 
 athenapdf
 ---------
