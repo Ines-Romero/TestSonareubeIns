@@ -91,15 +91,8 @@ AthenaPDF
     # docker pull arachnysdocker/athenapdf-service
     # docker run -p 8080:8080 -d --env-file=athenapdf.env arachnysdocker/athenapdf-service
 
-Example of usage:
-`````````````````
-::
-
-    http://<docker-address>:8080/convert?auth=arachnys-weaver&url=http://blog.arachnys.com/
-    $ curl http://dockerhost:8080/convert\?auth\=arachnys-weaver\&url\=http://blog.arachnys.com/ |> out.pdf
-
 athenapdf
-^^^^^^^^^
+---------
 ::
 
     Usage: athenapdf [options] <URI> [output]
@@ -121,3 +114,10 @@ athenapdf
     --no-portrait                render in landscape
     --no-background              omit CSS backgrounds
     --no-cache                   disables caching
+
+Example of usage:
+`````````````````
+::
+
+    http://<docker-address>:8080/convert?auth=arachnys-weaver&url=http://blog.arachnys.com/
+    $ curl http://dockerhost:8080/convert\?auth\=arachnys-weaver\&url\=http://blog.arachnys.com/ |> out.pdf
