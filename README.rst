@@ -2,6 +2,8 @@
 SonarQube installation  & configuration steps:
 ==============================================
 
+::
+
     # apt-get update && apt-get upgrade
 
 PostgreSQL
