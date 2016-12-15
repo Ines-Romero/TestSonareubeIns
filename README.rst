@@ -65,6 +65,7 @@ Register SonarQube at boot time (Ubuntu, 64 bit)::
     # ln -s /opt/sonar/bin/linux-x86-64/sonar.sh /usr/bin/sonar
     # chmod 755 /etc/init.d/sonar
     # update-rc.d sonar defaults
+::
 
     # vi /opt/sonar/conf/sonar.properties
     sonar.jdbc.username=sonarqube
@@ -74,6 +75,7 @@ Register SonarQube at boot time (Ubuntu, 64 bit)::
     sonar.web.host=0.0.0.0
     sonar.web.port=9000
     sonar.web.javaOpts=-server
+::
 
     # reboot
 
