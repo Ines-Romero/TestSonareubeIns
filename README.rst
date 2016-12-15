@@ -99,18 +99,18 @@ Example of usage:
     convert HTML to PDF via stdin or a local / remote URI
     Options:
 
-    -h, --help                   output usage information
-    -V, --version                output the version number
-    --debug                      show GUI
-    -T, --timeout <seconds>      seconds before timing out (default: 120)
-    -D, --delay <milliseconds>   milliseconds delay before saving (default: 200)
-    -P, --pagesize <size>        page size of the generated PDF (default: A4)
-    -M, --margins <marginsType>  margins to use when generating the PDF (default: standard)
-    -Z --zoom <factor>           zoom factor for higher scale rendering (default: 1 - represents 100%)
-    -S, --stdout                 write conversion to stdout
-    -A, --aggressive             aggressive mode / runs dom-distiller
-    -B, --bypass                 bypasses paywalls on digital publications (experimental feature)
-    --proxy <url>                use proxy to load remote HTML
-    --no-portrait                render in landscape
-    --no-background              omit CSS backgrounds
-    --no-cache                   disables caching
+    \-h, --help                   output usage information
+    \-V, --version                output the version number
+    \--debug                      show GUI
+    \-T, --timeout <seconds>      seconds before timing out (default: 120)
+    \-D, --delay <milliseconds>   milliseconds delay before saving (default: 200)
+    \-\P, --pagesize <size>        page size of the generated PDF (default: A4)
+    \-M, --margins <marginsType>  margins to use when generating the PDF (default: standard)
+    \-Z --zoom <factor>           zoom factor for higher scale rendering (default: 1 - represents 100%)
+    \-S, --stdout                 write conversion to stdout
+    \-A, --aggressive             aggressive mode / runs dom-distiller
+    \-B, --bypass                 bypasses paywalls on digital publications (experimental feature)
+    \--proxy <url>                use proxy to load remote HTML
+    \--no-portrait                render in landscape
+    \--no-background              omit CSS backgrounds
+    \--no-cache                   disables caching
