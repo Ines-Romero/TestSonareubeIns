@@ -122,5 +122,6 @@ Example of usage:
     $ curl http://dockerhost:8080/convert\?auth\=arachnys-weaver\&url\=http://blog.arachnys.com/ |> out.pdf
 
 
+============================================
 Analyzing with SonarQube Scanner for Jenkins
 ============================================
