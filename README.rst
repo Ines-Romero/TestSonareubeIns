@@ -31,10 +31,10 @@ SonarQube Server
 ----------------
 ::
 
-    $ wget https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-6.2.zip
+    $ wget https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-5.6.4.zip
     # apt-get install unzip
-    $ unzip sonarqube-6.2.zip
-    # mv sonarqube-6.2/ /opt/sonar/
+    $ unzip sonarqube-5.6.4.zip
+    # mv sonarqube-5.6.4/ /opt/sonar/
 
 
 Create the file /etc/init.d/sonar with this content::
