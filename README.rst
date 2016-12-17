@@ -72,7 +72,7 @@ Setting the access to the Database::
 Starting the Web Server::
 
     sonar.web.host=0.0.0.0
-    sonar.web.port=9000
+    sonar.web.port=80
     sonar.web.javaOpts=-server
 ::
 
@@ -88,7 +88,7 @@ AthenaPDF
 
     # apt-get install docker.io
     # docker pull arachnysdocker/athenapdf-service
-    # docker run --restart=always -p 8080:8080 -d --env-file=athenapdf.env arachnysdocker/athenapdf-service
+    # docker run --name athenapdf --restart=always -p 8080:8080 -d --env-file=athenapdf.env arachnysdocker/athenapdf-service
 
 athenapdf
 ---------
